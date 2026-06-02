@@ -1,0 +1,10 @@
+[package]
+name = "run_test"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bytecount = { version = "0.6", features = ["runtime-dispatch-simd"] }
+
+[profile.release]
+opt-level = 3
